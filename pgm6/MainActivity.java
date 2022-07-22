@@ -24,16 +24,14 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 public void parsexml(View v){
     try {
-        InputStream is=getAssets().open("city.xml");
-        DocumentBuilderFactory documentBuilderFactory =
-        DocumentBuilderFactory.newInstance();
-        DocumentBuilder
-        documentBuilder=documentBuilderFactory.newDocumentBuilder();
-        Document document=documentBuilder.parse(is);
+        InputStream is = getAssets().open("city.xml");
+        DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+        Document document = documentBuilder.parse(is);
         StringBuilder stringBuilder=new StringBuilder();
         stringBuilder.append("XML DATA");
         stringBuilder.append("\n-------------");
-        NodeList nodeList=document.getElementsByTagName("place");
+        NodeList nodeList = document.getElementsByTagName("place");
         for(int i=0; i<nodeList.getLength();i++){
             Node node = nodeList.item(i);
             if(node.getNodeType()==Node.ELEMENT_NODE){
@@ -60,7 +58,7 @@ public void parsejson(View V){
     StringBuilder stringBuilder = new StringBuilder();
     try {
         InputStream is = getAssets().open("city.json");
-        int size=is.available();
+        int size = is.available();
         byte[] buffer=new byte[size];
         is.read(buffer);
         json = new String(buffer, StandardCharsets.UTF_8);
