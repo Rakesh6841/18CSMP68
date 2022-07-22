@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewDataActivity">
+
+    <TextView
+        android:id="@+id/view_header_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PARSING XML AND JSON DATA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/view_xml_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XML Data"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view_json_label_id"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_header_id"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/view_json_label_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:text="JSON Data"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_header_id"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <TextView
+        android:id="@+id/view_xml_content_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xml content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_xml_label_id"
+        app:layout_constraintTop_toBottomOf="@+id/view_xml_label_id"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/view_json_content_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="json content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_json_label_id"
+        app:layout_constraintTop_toBottomOf="@+id/view_json_label_id"
+        app:layout_constraintVertical_bias="0.107" />
+</androidx.constraintlayout.widget.ConstraintLayout>

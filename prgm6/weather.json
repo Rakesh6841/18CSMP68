@@ -1,0 +1,9 @@
+{
+    "weather": {
+      "city_name": "Bangalore",
+      "latitude": "12.295",
+      "longitude": "76.987",
+      "temperature": "25",
+      "humidity": "50"
+    }
+  }
